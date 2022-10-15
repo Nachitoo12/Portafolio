@@ -324,9 +324,10 @@ section .texto
 @media (max-width: 700px){
     header{
         flex-direction: column;
+        padding-right: 20%;
     }
     .menu li a{
-        padding: 10px 0px;
+       
     }
     .menu ul li a:hover{
         border-bottom: rgb(14, 0, 164) solid;
@@ -335,7 +336,7 @@ section .texto
 
     .contenido
     {
-        text-align: center;
+        padding-top: 40px;
     }
 }
 
