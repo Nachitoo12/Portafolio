@@ -325,10 +325,12 @@ section .texto
     header{
         flex-direction: column;
         justify-content:center;
+        position: fixed;
         min-height: 10px;
-        padding: 5px 0px;
+        padding: 5px 10px;
         text-align: right;
-        width: auto; 
+        width: 510px; 
+        z-index: 10;
     }
     .menu ul li{
         display: inline-block;
