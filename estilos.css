@@ -342,7 +342,7 @@ section .texto
 
 
     .sobre_m img{
-        height: 250px;
+        height: 200px;
     }
     .form{
         justify-content: center;
