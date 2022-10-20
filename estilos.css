@@ -10,45 +10,51 @@ html
     scroll-behavior: smooth;
 }
 
-header
-{
-    display: flex;
-    min-height: 50px;
-    position: fixed;
-    z-index: 10;
-    align-items: center;
-    padding: 20px;
-    justify-content: space-between;
-    background: rgb(0, 0, 0);
+header{
     width: 100%;
-    
-    
-}
-.logo
-{
-    font-size: 40px;
-    text-decoration: none;
-    color:#fff
-
+    background-color: black;
 }
 
-
-.menu ul li
-{
-    display: inline-block;
-    padding: 20px;
-    font-size: 30px;
-   
-}.menu ul li a
-{
-    text-decoration: none;
+#btn-menu{
+    display: none;
+}
+header label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding:10px;
+    background: rgb(165, 149, 149);
+    overflow: hidden;
+}
+header label:hover {
+    cursor: pointer;
+    background: rgb(247, 247, 247);
+}
+header label img {
+    height: 30px;
+    width: 30px;
+}
+.menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.menu li a:hover{
+    color: black;
+    background: white;
+    border-radius: 10px;
+}
+.menu li a {
+    display: block;
+    padding:  15px 20px;
     color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+
 }
-.menu ul li a:hover
-{
-    border-bottom: rgb(14, 0, 164) solid;
-    transition: 0.1s;
-}
+
 section
 {
     background:url(./banner.jpg);
@@ -129,7 +135,7 @@ section .texto
 
 /* Sobre mi */
 
-.sobre_m
+ .sobre_m
 {
     display: flex;
     margin: auto;
@@ -157,9 +163,9 @@ section .texto
 .waves_c
 {
     background: black;
-}
+} 
 
-/* Contacto */
+/*Contacto */
 
 .wawes__contact
 {
@@ -251,7 +257,7 @@ section .texto
     box-shadow: 0 0 50px rgba(255, 255, 255, 0.8);
 }
 
-/* FOOTER */
+FOOTER */
 
 
 
@@ -297,100 +303,11 @@ section .texto
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 800px){
-    header{
-        flex-direction: column;
-        justify-content:center;
-        position: fixed;
-        min-height: 10px;
-        padding: 5px 10px;
-        text-align: right;
-        width: auto; 
-        z-index: 10;
-    }
-    .menu ul li{
-        display: inline-block;
-        padding: 20px;
-        font-size: 20px;
-    }
-
-    .menu li a{
-       padding: 5px 0px;
-    }
-    .menu ul li a:hover{
-        border-bottom: rgb(14, 0, 164) solid;
-        transition: 0.1s;
-    }
-
-    .logo{
-        font-size: 30px;
-    }
-    section
-    {
+ @media (max-width:800px){
+    section contenido{
         background: black;
-        width: auto;
     }
-    section .contenido
-    {
-        margin-top: 40px;
-        display:flex;
-        width: 100%;
-        margin: auto;
-        height: 650px;
-        align-items: center;
-        justify-content: space-between;
-    }
-}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ }
