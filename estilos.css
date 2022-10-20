@@ -133,6 +133,19 @@ section .texto
     background: black;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Sobre mi */
 
  .sobre_m
@@ -164,6 +177,20 @@ section .texto
 {
     background: black;
 } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Contacto */
 
@@ -257,7 +284,7 @@ section .texto
     box-shadow: 0 0 50px rgba(255, 255, 255, 0.8);
 }
 
-FOOTER */
+/*FOOTER */
 
 
 
@@ -304,10 +331,19 @@ FOOTER */
 
 
  @media (max-width:800px){
-    section contenido{
-        background: black;
+    .sobre_m {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .sobre_m h3{
+       width: 50%;
     }
 
+
+    .sobre_m img{
+        height: 300px;
+    }
 
 
  }
